@@ -1,0 +1,261 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:sans-serif
+}
+nav{
+    background-color:red;
+    display: flex;
+    padding:40px 80px;
+    text-align:center;   
+}
+.nav-items{
+    padding-top: 10px;
+    padding-left:20px;
+    display: flex;
+}
+/* dropdown */
+.dropdown{
+    position: relative; 
+    cursor: pointer;
+}
+.dropdown:hover{
+    text-decoration: underline;
+}
+.dropdown-links{
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    min-width:50px;
+    border-radius:5px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-links a{
+    color:black;
+    display: block;
+    padding: 10px 10px;   
+}
+.dropdown-links a:hover{
+    font-weight: bold;
+}
+.dropdown:hover .dropdown-links {
+    display: block;  
+}
+.btn{
+      margin-left: 200px;   
+}
+  button{
+    padding: 10px 15px;
+    color: white;
+    border : none; 
+    cursor: pointer;
+    border-radius:20px;
+    font-weight: bold;
+}
+  #login{
+    background: transparent;
+}
+#signup{
+      background: white;
+      color:hsl(356, 100%, 66%);
+}
+li {
+      list-style: none;
+      color:white;
+      padding-left: 50px;
+}
+ a{
+      text-decoration: none;
+      color:white;
+      cursor: pointer;
+}
+ a:hover{
+    text-decoration: underline;
+}
+  #signup:hover{
+   background-color:hsl(355, 100%, 74%);
+    color: white;   
+   }
+nav #login:hover{
+    border: 2px  solid white;
+}
+/* section1 */
+.introduction{
+    overflow: hidden;
+    background-color:red;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align:center;   
+    border-radius: 0px 0px 0px 100px;
+    font-size:25px;
+    line-height: 10vh;
+    color:hsl(0, 0%, 100%);
+    padding: 100px 80px;
+}
+.introduction p{
+    margin-top:10px;
+}
+#Learn-more{
+    background: transparent;
+    border: 2px  solid white;
+}
+#Learn-more:hover{
+    background:white;
+    color:red;
+    border: 2px  solid white;
+ }
+ h3{
+     color:hsl(208, 49%, 24%)
+ }
+.designfor-future{
+    line-height: 5vh;
+    padding:80px  0 80px 80px;
+    font-family: sans-serif; 
+}
+.designfor-future img{
+    margin-top:100px;
+}
+.imgandcontent{
+    display: flex;
+ }
+.designfor-future h2{
+    text-align: center;
+    color:hsl(208, 49%, 24%); 
+    line-height: 30vh; 
+}
+.designfor-future h3{
+    line-height: 20vh;
+}
+/* section3 */
+.stateof-art{
+    background:hsl(237, 23%, 32%);
+    display: flex;
+    color:hsl(0, 0%, 100%);
+    border-radius: 0px 100px 0px 100px
+}
+.content3{
+    padding-top: 200px;
+}
+p{
+    line-height:8vh
+}
+/* section4 */
+.Freeopen-simple{
+    display: flex;
+    margin: 70px 0 70px 0;
+}
+.Freeopen-simple h2{
+    line-height: 20vh;
+    color:hsl(208, 49%, 24%)
+}
+.content4{
+    padding-top: 100px;
+}
+/* footer */
+.footer-contents{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    line-height: 7vh;
+}
+footer{
+    border-radius: 0px 100px 0px 0px;
+    background: hsl(240, 10%, 16%);
+    color:white;
+}
+footer a{
+    color:hsl(240, 2%, 79%)
+}
+.developer p{
+    text-align:center;
+    font-weight: bold;
+}
+.dev{
+    color:red;
+}
+@media(max-width:375px){
+html{
+    font-size: 10px;
+}
+nav{
+    padding:10px 20px;
+}
+nav li{
+        color:white;
+        display: block;
+        padding: 0px 5px;  
+}
+.nav-items{ 
+    padding-left:10px;}
+.logo img{
+    width: 30px;
+    height:30px
+}
+.btn{
+     margin-left: 1px;   
+ }
+   .introduction{
+    font-size:15px;
+    line-height: 5vh;
+    padding: 50px 40px;
+}
+button{
+    padding: 5px 8px;
+}
+.designfor-future{
+    line-height:2vh;
+    padding:20px  0 20px 20px;
+}
+.designfor-future img{
+    width:300px;
+    height:300px
+}
+.imgandcontent{
+    display: block;
+}
+.designfor-future img{
+    width: 250px;
+    height: 250px;
+    margin-top:10px;
+}
+.designfor-future h2{
+    line-height: 8vh; 
+    }
+p{
+    line-height: 5vh;
+    }
+.designfor-future h3{
+    line-height: 5vh;
+    }
+img{
+    width: 250px;
+    height: 250px;
+}
+.stateof-art{
+    display:block;
+}
+.content3{
+    padding:40px 30px;
+}
+.Freeopen-simple{
+    display: block;
+    margin:0;
+    padding: 20px
+}
+.Freeopen-simple h2{
+    line-height: 5vh;
+}
+.content4{
+    padding-top: 20px;
+}
+.footer-contents{
+    display:block;
+    padding: 30px 0px; 
+    line-height: 4vh;
+}
+footer img{
+    margin-left:50px;
+}
